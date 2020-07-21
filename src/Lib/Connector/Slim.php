@@ -13,11 +13,11 @@ use Slim\Http\RequestBody;
 use Slim\Http\Stream;
 use Slim\Http\UploadedFile;
 use Slim\Http\Uri;
-use Symfony\Component\BrowserKit\Client;
+use Symfony\Component\BrowserKit\AbstractBrowser;
 use Symfony\Component\BrowserKit\Request as BrowserKitRequest;
 use Symfony\Component\BrowserKit\Response as BrowserKitResponse;
 
-final class Slim extends Client
+final class Slim extends AbstractBrowser
 {
     /**
      * @var App
